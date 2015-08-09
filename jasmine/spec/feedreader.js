@@ -97,7 +97,7 @@ $(function() {
         });
 
         it('contain at least one entry', function(done) {
-            expect($('.feed .entry')).toBeDefined();
+            expect($('.feed .entry:first-child')).toBeDefined();
             done();
         });
 
@@ -109,6 +109,22 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+
+        // Get the content before the feeds are loaded.
+        var oldContent = $('.feed').html();
+
+        // Call the loadFeed function.
+        beforeEach(function(done) {
+            loadFeed(0, function() {
+                done();
+            });
+        });
+
+        it('content actually changes', function(done) {
+            // Test if new content is equivalent to initial content.
+            expect($('.feed').html()).not.toBe(oldContent);
+            done();
+        });
 
     });
 }());
