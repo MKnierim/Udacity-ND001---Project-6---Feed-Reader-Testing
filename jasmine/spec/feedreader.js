@@ -69,8 +69,7 @@ $(function() {
          * clicked and does it hide when clicked again.
          */
         it('shows and hides on click', function() {
-            var menuButton = $('.menu-icon-link'),
-                menu = $('.menu');
+            var menuButton = $('.menu-icon-link');
 
             // First test: Menu appears when menu icon is clicked.
             menuButton.click();
