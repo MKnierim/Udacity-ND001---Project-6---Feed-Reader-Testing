@@ -1,3 +1,31 @@
+# Udacity ND001 Front-end web development
+## P6: Feed Reader Testing
+
+### Running instructions
+
+Here are some useful tips to help run the app:
+
+#### Desktop
+
+Open index.html to get access to the app. All the features are loaded automatically from there. The app starts by initializing the map and a set of markers, displaying locations in the city of Karlsruhe, Germany which I would like to visit. Most of the usual Google Maps features were enabled (panning, zomming, etc.). For an overview of the apps main features have a look below.
+
+#### Mobile
+
+1. To inspect the site on a phone, download the repository and run a local server
+
+  ```bash
+  $> cd /path/to/project-folder
+  $> python -m SimpleHTTPServer 8080
+  ```
+
+1. Open a browser and visit localhost:8080
+
+### Features
+* ...
+
+
+# Old content (from Udacity repository)
+
 # Project Overview
 
 In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.

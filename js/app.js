@@ -8,24 +8,23 @@
 
 // The names and URLs to all of the feeds we'd like available.
 
-// Step 6 - Edit the allFeeds variable in ./js/app.js to make the provided
-// test fail and see how Jasmine visualizes this failure in your application.
-// --> allFeeds was commented out.
-// var allFeeds = [
-//     {
-//         name: 'Udacity Blog',
-//         url: 'http://blog.udacity.com/feeds/posts/default?alt=rss'
-//     }, {
-//         name: 'CSS Tricks',
-//         url: 'http://css-tricks.com/feed'
-//     }, {
-//         name: 'HTML5 Rocks',
-//         url: 'http://feeds.feedburner.com/html5rocks'
-//     }, {
-//         name: 'Linear Digressions',
-//         url: 'http://feeds.feedburner.com/udacity-linear-digressions'
-//     }
-// ];
+// Step 7 - Return the allFeeds variable to a passing state.
+// --> allFeeds was defined again by removing comment marks.
+var allFeeds = [
+    {
+        name: 'Udacity Blog',
+        url: 'http://blog.udacity.com/feeds/posts/default?alt=rss'
+    }, {
+        name: 'CSS Tricks',
+        url: 'http://css-tricks.com/feed'
+    }, {
+        name: 'HTML5 Rocks',
+        url: 'http://feeds.feedburner.com/html5rocks'
+    }, {
+        name: 'Linear Digressions',
+        url: 'http://feeds.feedburner.com/udacity-linear-digressions'
+    }
+];
 
 /* This function starts up our application. The Google Feed
  * Reader API is loaded asynchonously and will then call this
